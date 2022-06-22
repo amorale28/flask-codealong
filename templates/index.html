@@ -1,14 +1,107 @@
-<html>
-    <head>
-        <title>Welcome!</title>
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>Ariana Grande Song Matcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
-        </form>
+        <h1>Ariana Grande Song Matcher!</h1>
+      <div class = "container-fluid">
+        <p><center>Find the best Ariana Grande song for your mood. Complete the survey to find your Ariana Grande song for the moment.</p></center></div>
+<!--       TELL COMPUTER TO POST ONTO /RESULTS -->
+<form method="POST" action="/results">
+<!--       Get user's name -->
+      <div class="container col-md-6 offset">
+            <div class="input-group">
+        <span class="input-group-text">Your name</span>
+        <input type="text" name="name" aria-label="name" class="form-control">
+        </div>
+       </div>
+<!--       Form 1: Feelings -->
+      <div class="container col-md-6 offset">
+          <h2>How are you feeling right now? </h2>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="feelingsradio" id="feelingsradio1" value="1">
+      <label class="form-check-label" for="feelingsradio1">
+        Sad
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="feelingsradio" id="feelingsradio2" value="2">
+      <label class="form-check-label" for="feelingsradio2">
+        Ready to dance
+      </label>
+    </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="feelingsradio" id="feelingsradio3" value="3">
+      <label class="form-check-label" for="feelingsradio3">
+        Supper happy
+      </label>
+      </div>
+    </div>
+
+      <!--       Form 2: Genre Preference -->
+      <div class="container col-md-6 offset">
+          <h2>What's the weather today?</h2>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="weather" id="weather1" value="1">
+      <label class="form-check-label" for="weather1">
+        Rainy
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="weather" id="weather2" value="2">
+      <label class="form-check-label" for="weather2">
+        Sunny and pleasant
+      </label>
+    </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="weather" id="weather3" value="3">
+      <label class="form-check-label" for="weather3">
+        Cold
+      </label>
+    </div>
+      </div>
+
+       <!--       Form 3: What's your sign? -->
+      <div class="container col-md-6 offset">
+          <h2>What's your sign?</h2>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="sign" id="sign1" value="1">
+      <label class="form-check-label" for="sign1">
+        Air Sign: Gemini, Libra, or Aquarius
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="sign" id="sign2" value="2">
+      <label class="form-check-label" for="sign2">
+       Water Sign: Cancer, Scorpio, or Pisces 
+      </label>
+    </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="sign" id="sign3" value="3">
+      <label class="form-check-label" for="sign3">
+        Earth Sign: Taurus, Virgo, or Capricorn
+      </label>
+    </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="sign" id="sign4" value="4">
+      <label class="form-check-label" for="sign3">
+        Fire Sign: Aries, Leo, or Sagittarius
+      </label>
+    </div>
+      </div>
+        
+<!-- Submit Button -->
+      <div class="container-fluid col-md-6 offset"><button type="submit" class="btn btn-primary btn-lg">Submit</button>
+</form></div>
+      <script src="script.js"></script>
+    <!-- Import most up-to-date Bootstrap JS Bundle Here -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
     </body>
 </html>

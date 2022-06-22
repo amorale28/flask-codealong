@@ -1,0 +1,94 @@
+/* Import custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Fresca&display=swap');
+
+/* Color Palette Used:
+#000000 (black);
+#ffecd5 (warm white);
+#FCA311 (yellow);
+#E5E5E5 (light gray);
+#FFFFFF (white);
+*/
+
+/* This is a custom class to change the color of the NavBar...it overrides the Bootstrap built-in style */
+.navStyle {
+  background-color: #fefeef;
+}
+
+/* Background color for every page, default font for every page, default font color for every page */
+body {
+  background-color: #f1c9fe !important;
+  font-family: 'Asap', sans-serif !important;
+  color: #232323 !important;
+}
+
+/* Custom font & font color for h1 elements, center alignment for text, text resize (and override of h1 default), top padding (for cushion away from NavBar) */
+h1 {
+  font-family: 'Fresca', sans-serif;
+  color: #3a88fe;
+  text-align: center;
+  font-size: 72px !important;
+  padding-top: 16px;
+}
+
+/* Custom font & font color for h2 elements, center alignment for text, text resize (and override of h2 default), top padding (for cushion from other elements), text underline feature */
+h2 {
+  font-family: 'Fresca', sans-serif;
+  color: #3a88fe;
+  text-align: center;
+  font-size: 36px !important;
+  padding-top: 16px;
+  text-decoration-line: underline;
+}
+
+/* Text alignment for h6 elements, italics */
+h6 {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Text color for all links on page */
+a {
+  color: #0056d6 !important;
+}
+
+/* Text color & text background color for all links on page, when hovering */
+a:hover {
+  color: #444444 !important;
+  background-color: #fefeef !important;
+}
+
+/* Background color for VIP logo on NavBar */
+#icon {
+  background-color: #96d35f !important;
+}
+
+/* Overrides built-in Bootstrap style for cards and list items (used in cards and NavBar) - background color, text color, font */
+.card, li {
+  background-color: #E5E5E5 !important;
+  font-family: 'Asap', sans-serif;
+  color: #14213D !important;
+}
+
+/* Under construction pages - image responsiveness dependent on device/screen size */
+img {
+    max-width: 100% ;
+    height: auto;
+}
+
+/* To customize the color of the button background and text on the form (suggestions page) */
+.btn-primary {
+  background-color: #e392fe !important;
+  color: #14213D !important;
+}
+
+/* To increase the size of the form box for user rationale */
+#details {
+  height: 150px;
+}
+
+/* container properties */
+.container {
+  padding: 2px;
+  border: solid 5px #4f7a28;
+}
